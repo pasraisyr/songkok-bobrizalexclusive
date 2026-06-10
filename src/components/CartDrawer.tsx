@@ -288,9 +288,27 @@ export default function CartDrawer({
 
         {cart.length > 0 && (
           <div className="cart-footer">
-            <div className="cart-summary-row">
-              <span className="cart-total-label">Subjumlah:</span>
-              <span className="cart-total-val">RM {totalPrice}.00</span>
+            <div className="cart-summary" style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginBottom: '20px' }}>
+              <div className="cart-summary-row" style={{ marginBottom: 0 }}>
+                <span className="cart-total-label" style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>Subjumlah:</span>
+                <span className="cart-total-val" style={{ fontSize: '1.1rem' }}>RM {totalPrice}.00</span>
+              </div>
+              <div className="cart-summary-row" style={{ marginBottom: 0 }}>
+                <span className="cart-total-label" style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>Penghantaran:</span>
+                <span className="cart-total-val" style={{ fontSize: '1.1rem' }}>
+                  {deliveryMethod === 'postage' ? 'RM 15.00' : 'Percuma (Pickup)'}
+                </span>
+              </div>
+              <div className="cart-summary-divider" style={{
+                borderTop: '1px dashed rgba(197, 160, 89, 0.2)',
+                margin: '8px 0'
+              }}></div>
+              <div className="cart-summary-row" style={{ marginBottom: 0 }}>
+                <span className="cart-total-label" style={{ fontWeight: 'bold' }}>Jumlah Keseluruhan:</span>
+                <span className="cart-total-val" style={{ fontSize: '1.6rem', color: 'var(--color-gold-light)' }}>
+                  RM {totalPrice + (deliveryMethod === 'postage' ? 15 : 0)}.00
+                </span>
+              </div>
             </div>
             
             <button className="btn-checkout" onClick={handleSubmit}>

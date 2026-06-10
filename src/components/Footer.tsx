@@ -58,7 +58,6 @@ export default function Footer() {
               </svg>
               <span>
                 013-4837945 (WhatsApp Checkout)<br />
-                019-4985558 (Panggilan)
               </span>
             </li>
             <li className="contact-info-item">

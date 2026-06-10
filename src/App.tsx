@@ -91,7 +91,12 @@ export default function App() {
       message += `   - Harga: RM ${item.price * item.quantity}.00\n\n`;
     });
 
-    message += `*JUMLAH KESELURUHAN: RM ${totalPrice}.00*\n\n`;
+    const shippingFee = orderDetails.deliveryMethod === 'postage' ? 15 : 0;
+    const grandTotal = totalPrice + shippingFee;
+
+    message += `Subjumlah: RM ${totalPrice}.00\n`;
+    message += `Penghantaran: RM ${shippingFee}.00 (${orderDetails.deliveryMethod === 'postage' ? 'Postage' : 'Pickup'})\n`;
+    message += `*JUMLAH KESELURUHAN: RM ${grandTotal}.00*\n\n`;
     message += `-----------------------------------\n\n`;
     
     message += `*MAKLUMAT PELANGGAN:*\n`;
