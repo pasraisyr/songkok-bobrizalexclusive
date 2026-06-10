@@ -19,24 +19,24 @@ export const productImages = [
 
 export const faqItems = [
   {
-    q: "Berapa lamakah tempoh pembuatan Songkok Datuk Bandar ini?",
-    a: "Setiap Songkok Datuk Bandar adalah buatan tangan sepenuhnya (fully handmade) demi menjaga kualiti dan kekemasan. Tempoh pembuatan mengambil masa 2 hingga 3 hari bekerja sebelum sedia untuk dipos atau diambil sendiri di kedai kami."
+    q: "Berapakah tempoh pembuatan songkok?",
+    a: "Tempahan akan disiapkan dalam tempoh 1 hingga 2 hari bekerja, tertakluk kepada kuantiti tempahan dan ketersediaan stok semasa."
   },
   {
-    q: "Kedai fizikal Bob Riezal Exclusive terletak di mana?",
-    a: "Kedai kami beroperasi di Kompleks Pekan Rabu, Alor Setar, Kedah. Alamat penuh: 1A / 8 Kompleks Pekan Rabu, Jalan Tunku Ibrahim, 05000 Alor Setar Kedah. Sila singgah jika anda berada berdekatan!"
+    q: "Di manakah lokasi kedai fizikal Bob Riezal Exclusive?",
+    a: "Kami beroperasi di Kompleks Pekan Rabu, Alor Setar, Kedah, dan pelanggan dialu-alukan untuk hadir bagi mendapatkan khidmat nasihat serta melihat produk secara langsung."
   },
   {
-    q: "Bagaimanakah cara mengukur saiz kepala dengan betul?",
-    a: "Anda boleh menggunakan pita pengukur dalam unit inci. Ukur lilitan kepala di bahagian atas dahi melintasi atas telinga. Rujuk butang 'Panduan Ukur Saiz' di bahagian konfigurasi produk untuk jadual saiz lengkap."
+    q: "Bagaimanakah cara mengukur saiz kepala yang tepat?",
+    a: "Gunakan tali inci dan ukur lilitan kepala pada bahagian yang selesa dipakai songkok, iaitu sedikit di atas kening dan telinga, untuk mendapatkan saiz yang paling tepat."
   },
   {
-    q: "Bolehkah saya membuat pertukaran jika saiz yang diterima tidak muat?",
-    a: "Boleh. Polisi kami membenarkan penukaran saiz dalam tempoh 3 hari selepas tempahan diterima, dengan syarat songkok masih berada dalam keadaan asal (belum dipakai untuk kegunaan harian, tag jenama masih ada, dan tidak rosak). Kos pengeposan ditanggung oleh pelanggan."
+    q: "Bolehkah saya membuat pertukaran saiz jika tidak muat?",
+    a: "Ya, pertukaran saiz boleh dilakukan tertakluk kepada syarat yang ditetapkan dan produk mestilah masih dalam keadaan baik serta belum digunakan."
   },
   {
-    q: "Adakah songkok ini menggunakan baldu bermutu tinggi?",
-    a: "Ya, kami menggunakan kain baldu VIP gred tinggi yang diimport khas. Material ini mempunyai tekstur yang sangat halus, warna hitam pekat yang tidak luntur, serta tidak mudah berbulu atau berhabuk berbanding baldu biasa."
+    q: "Apakah jenis material baldu yang digunakan?",
+    a: "Songkok ini dihasilkan menggunakan Baldu Premium dan Super Premium yang menawarkan kemasan lebih eksklusif, tahan lama serta memberikan keselesaan maksimum kepada pemakai."
   }
 ];
 
