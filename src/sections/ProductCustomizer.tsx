@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { sizes, heights, productImages } from '../data/productData';
+import { sizes, productImages } from '../data/productData';
 
 interface ProductCustomizerProps {
-  onAddToCart: (size: string, height: string, qty: number) => void;
+  onAddToCart: (size: string, qty: number) => void;
   onOpenSizeGuide: () => void;
   addedFeedback: boolean;
 }
@@ -14,12 +14,11 @@ export default function ProductCustomizer({
 }: ProductCustomizerProps) {
   // Configurator states
   const [selectedSize, setSelectedSize] = useState("22");
-  const [selectedHeight, setSelectedHeight] = useState("4 inci (Standard)");
   const [qty, setQty] = useState(1);
   const [activeImgIndex, setActiveImgIndex] = useState(0);
 
   const handleAddClick = () => {
-    onAddToCart(selectedSize, selectedHeight, qty);
+    onAddToCart(selectedSize, qty);
     setQty(1); // reset qty stepper after adding
   };
 
@@ -101,24 +100,6 @@ export default function ProductCustomizer({
                     onClick={() => setSelectedSize(sz)}
                   >
                     {sz}"
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Height Selection */}
-            <div className="selector-group" style={{ marginTop: '25px' }}>
-              <div className="selector-header">
-                <span className="selector-label">Tinggi Songkok</span>
-              </div>
-              <div className="pills-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
-                {heights.map((ht) => (
-                  <button
-                    key={ht}
-                    className={`pill-btn ${selectedHeight === ht ? 'active' : ''}`}
-                    onClick={() => setSelectedHeight(ht)}
-                  >
-                    {ht}
                   </button>
                 ))}
               </div>

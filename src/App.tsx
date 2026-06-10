@@ -26,8 +26,8 @@ export default function App() {
   const [addedFeedback, setAddedFeedback] = useState(false);
 
   // Add configuration to cart
-  const handleAddToCart = (size: string, height: string, quantity: number) => {
-    const itemId = `songkok-db-${size}-${height}`;
+  const handleAddToCart = (size: string, quantity: number) => {
+    const itemId = `songkok-db-${size}`;
     const existingIndex = cart.findIndex(item => item.id === itemId);
 
     if (existingIndex > -1) {
@@ -40,7 +40,6 @@ export default function App() {
         name: "Songkok Datuk Bandar",
         price: 150,
         size,
-        height,
         quantity,
         image: songkokDbImg
       };
@@ -88,7 +87,6 @@ export default function App() {
     cart.forEach((item, index) => {
       message += `${index + 1}. *${item.name}*\n`;
       message += `   - Saiz: ${item.size} inci\n`;
-      message += `   - Tinggi: ${item.height}\n`;
       message += `   - Kuantiti: ${item.quantity}x\n`;
       message += `   - Harga: RM ${item.price * item.quantity}.00\n\n`;
     });

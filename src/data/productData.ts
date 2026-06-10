@@ -7,7 +7,6 @@ import sulamanLogoImg from '../assets/sulaman-logo-datukbandar.jpeg';
 
 export const sizes = ["21", "21 ¼", "21 ½", "21 ¾", "22", "22 ¼", "22 ½", "22 ¾", "23", "23 ¼", "23 ½"];
 
-export const heights = ["3 inci", "3 ½ inci", "4 inci (Standard)", "4 ½ inci"];
 
 export const productImages = [
   { src: songkokDbImg, label: 'Pandangan Hadapan' },

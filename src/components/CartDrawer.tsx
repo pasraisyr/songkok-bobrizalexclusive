@@ -5,7 +5,6 @@ export interface CartItem {
   name: string;
   price: number;
   size: string;
-  height: string;
   quantity: number;
   image: string;
 }
@@ -117,7 +116,7 @@ export default function CartDrawer({
                   <div className="cart-item-details">
                     <h4 className="cart-item-name">{item.name}</h4>
                     <p className="cart-item-meta">
-                      Saiz: {item.size}" | Tinggi: {item.height}
+                      Saiz: {item.size}"
                     </p>
                     <div className="cart-item-price-row">
                       <div className="qty-counter" style={{height: '32px', width: '85px'}}>
