@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4d081" />
+      <stop offset="50%" stop-color="#c5a059" />
+      <stop offset="100%" stop-color="#8a6d3b" />
+    </linearGradient>
+  </defs>
+  <!-- Velvet-black rounded base -->
+  <rect width="32" height="32" rx="7" fill="#0f0f11"/>
+  <!-- Songkok shape in gold gradient -->
+  <path d="M 6 22 L 8 11 C 8.5 9.5 11 9 16 9 C 21 9 23.5 9.5 24 11 L 26 22 C 26 23.5 21 24 16 24 C 11 24 6 23.5 6 22 Z" fill="url(#gold-grad)"/>
+</svg>
